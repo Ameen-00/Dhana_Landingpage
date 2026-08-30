@@ -11,7 +11,7 @@ export const CONTENT = {
     excerpt: "A form asks the borrower to translate their life into fields. A conversation lets them just talk, and Dhana does the translating.",
     date: "2026-08-22",
     read: "5 min read",
-    image: "/assets/resources/cover-learn.jpg",
+    image: "assets/resources/cover-learn.jpg",
     body: `
       <p>Most digital lending journeys begin with a form. The form assumes the borrower already knows their FOIR, can classify their income, and will not abandon halfway. For a salaried metro applicant, that assumption often holds. For a boutique owner in Kochi with festival-led UPI velocity, it collapses at the first gate.</p>
       <h2>The form can't listen</h2>
@@ -28,7 +28,7 @@ export const CONTENT = {
     excerpt: "Designing the verbal gate so the borrower hears the ask, the officer sees the log, and Digital Lending Directions stay on the happy path.",
     date: "2026-08-14",
     read: "4 min read",
-    image: "/assets/resources/res-consent-glass.jpg",
+    image: "assets/resources/res-consent-glass.jpg",
     body: `
       <p>A soft bureau pull is cheap to run and expensive to get wrong. Under the RBI Digital Lending Directions, consent is not a checkbox buried in a T&C scroll, it is an explicit, auditable moment.</p>
       <h2>Say the ask out loud</h2>
@@ -44,7 +44,7 @@ export const CONTENT = {
     excerpt: "Seasonality reads as risk to a salary gate. Twelve months of UPI tells a steadier story than a single payslip.",
     date: "2026-08-06",
     read: "6 min read",
-    image: "/assets/resources/cover-shreya.jpg",
+    image: "assets/resources/cover-shreya.jpg",
     body: `
       <p>Retail, weddings, tailoring, catering: huge swathes of Indian self-employment peak around festivals and taper in between. A salary-shaped underwriting model sees the peaks as volatility and the troughs as default risk.</p>
       <h2>The twelve-month average</h2>
@@ -60,7 +60,7 @@ export const CONTENT = {
     excerpt: "Deploy once, inside your perimeter. Lending is live; each product after it reuses the same layer and the same security review.",
     date: "2026-07-28",
     read: "4 min read",
-    image: "/assets/resources/res-selfhost.jpg",
+    image: "assets/resources/res-selfhost.jpg",
     body: `
       <p>Adding a new lending product to a bank usually means a new integration, a new security review, and a new quarter. Dhana is built so a new product is a journey, not a rebuild.</p>
       <h2>The relationship layer is the moat</h2>
@@ -77,7 +77,7 @@ export const CONTENT = {
     excerpt: "Instant, app-based credit was supposed to end the village lender. Priced at 30–60% APR and pushed by notification, a lot of it just gave him an app.",
     date: "2026-08-28",
     read: "6 min read",
-    image: "/assets/resources/res-free-ai.jpg",
+    image: "assets/resources/res-free-ai.jpg",
     body: `
       <p>The pitch for digital lending was liberation: no forms, no branch, no moneylender. Tap, get ₹10,000 in ninety seconds. What too much of the market actually shipped was the moneylender with better UX: effective rates of 30–60% a year, rollover by design, and collection pressure delivered by push notification instead of a knock on the door.</p>
       <h2>Speed is not access</h2>
@@ -94,7 +94,7 @@ export const CONTENT = {
     excerpt: "A clean bureau file mostly means you've had credit before. For half of India that's a chicken-and-egg trap, not a risk signal.",
     date: "2026-08-18",
     read: "5 min read",
-    image: "/assets/resources/res-framework-scales.jpg",
+    image: "assets/resources/res-framework-scales.jpg",
     body: `
       <p>Bureau scores are treated as objective truth. They aren't. A high score largely reflects a history of <em>having been given credit</em>, a salaried job, a metro address, a family that could co-sign. For a boutique owner, a gig worker, or a first-generation borrower, "no history" is read as "risk," when it usually just means "no one lent to them yet."</p>
       <h2>Thin file ≠ high risk</h2>
@@ -110,7 +110,7 @@ export const CONTENT = {
     excerpt: "'AI decides, human reviews' is usually a fig leaf. If the model can't be argued with, the human isn't in the loop: they're in the audit trail.",
     date: "2026-08-02",
     read: "5 min read",
-    image: "/assets/resources/res-hitl-stamp.jpg",
+    image: "assets/resources/res-hitl-stamp.jpg",
     body: `
       <p>Every lender now says "human in the loop." Most mean a screen where an officer rubber-stamps whatever the model already decided, because reversing it means explaining yourself and missing your SLA. That is not a loop. That is liability laundering.</p>
       <h2>HITL has to have teeth</h2>
@@ -127,7 +127,7 @@ export const CONTENT = {
     excerpt: "A shop owner can't take a bank call during business hours. The channel that reopens a dead lead is the one that waits until the shutters are down.",
     date: "2026-08-20",
     read: "4 min read",
-    image: "/assets/resources/res-blog-capacity.jpg",
+    image: "assets/resources/res-blog-capacity.jpg",
     body: `
       <p>Look at when a self-employed borrower actually replies. Not 11am, that's when the shop is full. It's 9pm, after the shutters are down, the till is counted, and there's finally a free minute. The bank's call-centre closed four hours earlier.</p>
       <h2>The channel has to wait</h2>
@@ -143,7 +143,7 @@ export const CONTENT = {
     excerpt: "Bolting a translation layer onto an English product isn't 'supporting Malayalam.' The borrower can tell in the first sentence.",
     date: "2026-08-10",
     read: "5 min read",
-    image: "/assets/resources/cover-video.jpg",
+    image: "assets/resources/cover-video.jpg",
     body: `
       <p>Most "multilingual" fintech is an English product with Google Translate stapled to the front. The borrower notices immediately: the phrasing is stiff, the numbers are read out in a foreign cadence, and the whole thing feels like a form pretending to be a person.</p>
       <h2>Speaking is trust</h2>
@@ -159,7 +159,7 @@ export const CONTENT = {
     excerpt: "If you want a human to make the credit call, you have to hand them something they can actually argue with. Here's what goes in the packet.",
     date: "2026-07-24",
     read: "6 min read",
-    image: "/assets/resources/res-hitl-stamp.jpg",
+    image: "assets/resources/res-hitl-stamp.jpg",
     body: `
       <p>"Human in the loop" is meaningless if the human gets a green tick and a score. A real exception brief is a packet a credit officer can interrogate in ninety seconds and defend in an audit.</p>
       <h2>What's in the packet</h2>
@@ -175,7 +175,7 @@ export const CONTENT = {
     excerpt: "Fintech chases the metro salaried customer who's already over-served. The real underwriting frontier is a co-op branch in a Tier-3 town.",
     date: "2026-08-04",
     read: "5 min read",
-    image: "/assets/resources/res-blog-officers.jpg",
+    image: "assets/resources/res-blog-officers.jpg",
     body: `
       <p>Every neobank is fighting over the same 60 million salaried, credit-carded, metro customers. Meanwhile India's urban and rural co-operative banks sit on deep local relationships with exactly the borrowers the mainstream models throw away, and almost no one is building for them.</p>
       <h2>Relationships the score can't see</h2>
@@ -191,7 +191,7 @@ export const CONTENT = {
     excerpt: "Most 'AI collections' is just an autodialer that never gets tired of calling. That's not innovation, it's the abusive part, automated.",
     date: "2026-07-18",
     read: "6 min read",
-    image: "/assets/resources/res-consent-glass.jpg",
+    image: "assets/resources/res-consent-glass.jpg",
     body: `
       <p>The dirty secret of a lot of "AI collections" is that the AI part is the harassment part. Tireless auto-dialing, scripted guilt, calls to contacts who never borrowed anything. Automation makes the worst human behaviour cheaper and infinitely repeatable. Regulators are right to be circling.</p>
       <h2>A different default</h2>
@@ -207,7 +207,7 @@ export const CONTENT = {
     excerpt: "Everyone complains about the Digital Lending Directions. We think they're the best thing that ever happened to a company that wants to do this right.",
     date: "2026-07-12",
     read: "4 min read",
-    image: "/assets/resources/res-free-ai.jpg",
+    image: "assets/resources/res-free-ai.jpg",
     body: `
       <p>Founders love to grumble that RBI's Digital Lending Directions slow everything down. We take the opposite view: hard, enforceable rules on consent, disclosure and human accountability are a gift to anyone building the honest version of this.</p>
       <h2>Rules punish the shortcut</h2>
@@ -225,8 +225,8 @@ export const CONTENT = {
     excerpt: "The relationship layer for BFSI: voice-first origination, consent-gated, human-decided. A short film.",
     date: "2026-08-29",
     read: "Watch · 1:28",
-    image: "/assets/videos/dhana-film2-poster.jpg",
-    video: "/assets/videos/dhana-film2.mp4",
+    image: "assets/videos/dhana-film2-poster.jpg",
+    video: "assets/videos/dhana-film2.mp4",
     body: `
       <p>A short film on what Dhana is: a borrower speaks, in her own language, and a consent-gated, credit-ready file appears on a banker's desk, with a human still making the call.</p>
       <p>No forms. No black box. The voice is the product.</p>
@@ -239,8 +239,8 @@ export const CONTENT = {
     excerpt: "A real product recording. Lead fields fill from speech as the call runs: disposition, income, employer, channel, language.",
     date: "2026-08-27",
     read: "Watch · demo",
-    image: "/assets/videos/dhana-voice-demo-1-poster.jpg",
-    video: "/assets/videos/dhana-voice-demo-1.mp4",
+    image: "assets/videos/dhana-voice-demo-1-poster.jpg",
+    video: "assets/videos/dhana-voice-demo-1.mp4",
     body: `
       <p>This is not a mockup. Dhana takes a live call and populates a credit-ready lead in real time (disposition, income, employer, channel and detected language) while the conversation is still happening.</p>
       <p>The officer watches the file build itself, then decides. Nothing is auto-approved.</p>
@@ -253,8 +253,8 @@ export const CONTENT = {
     excerpt: "Classify-from-speech, auto-detected language, and matched lenders on the side. The real operator console, recorded live.",
     date: "2026-08-26",
     read: "Watch · demo",
-    image: "/assets/videos/dhana-voice-demo-2-poster.jpg",
-    video: "/assets/videos/dhana-voice-demo-2.mp4",
+    image: "assets/videos/dhana-voice-demo-2-poster.jpg",
+    video: "assets/videos/dhana-voice-demo-2.mp4",
     body: `
       <p>The operator's side of Dhana: speech is classified into structured fields, language is auto-detected, and matched lenders appear alongside, all from a running conversation.</p>
       <p>This is the console a credit desk actually works in. Recorded from the live product.</p>
@@ -269,7 +269,7 @@ export const CONTENT = {
     excerpt: "Voice-first origination in Malayalam is running in an evening-window co-op pilot, with HITL locked on every credit decision.",
     date: "2026-08-25",
     read: "2 min read",
-    image: "/assets/resources/res-blog-capacity.jpg",
+    image: "assets/resources/res-blog-capacity.jpg",
     body: `
       <p>Dhana is live at Mayyanad Regional Co-operative Bank (MRCB), handling inbound and scheduled voice origination in Malayalam within RBI calling windows. The pilot targets working-capital enquiries that a salary gate would otherwise filter out.</p>
       <p>Every credit-relevant outcome routes to a human maker. Dhana packages the file; the officer decides. Early themes: calling-window discipline, Malayalam pacing, and officer callbacks that actually stick.</p>
@@ -282,7 +282,7 @@ export const CONTENT = {
     excerpt: "The relationship layer runs the full origination conversation in the borrower's language, with more Indic languages and Gulf dialects on the roadmap.",
     date: "2026-08-12",
     read: "2 min read",
-    image: "/assets/resources/cover-video.jpg",
+    image: "assets/resources/cover-video.jpg",
     body: `
       <p>Dhana's voice agent now conducts the entire origination conversation (greeting, KYC confirmation, consent, income framing and handoff) in Malayalam, Hindi, Tamil and English. A new language is a sprint, not a rebuild: eleven Indian languages are supported, with Arabic and Gulf dialects next.</p>
       <p>Language is per-call. The same agent, tuned once, meets each borrower where they are.</p>
@@ -295,7 +295,7 @@ export const CONTENT = {
     excerpt: "A white-label voice-agent platform for banks, NBFCs and co-ops, operating in Indian languages, self-hosted inside the institution's perimeter.",
     date: "2026-07-30",
     read: "3 min read",
-    image: "/assets/resources/cover-dhana.jpg",
+    image: "assets/resources/cover-dhana.jpg",
     body: `
       <p>Altiora Capital Solutions has launched Dhana, an AI relationship layer that lets institutions run their own voice-first origination without ripping out the core. Clients configure Dhana-branded agents, upload leads, watch calls live, and pull outcome reports, with the voice stack running on infrastructure inside India.</p>
       <p>Dhana joins the flow rather than replacing it: adapters to Finacle, LOS, CRM, bureau, DigiLocker and Account Aggregator stay inside the institution's trust boundary.</p>
@@ -310,7 +310,7 @@ export const CONTENT = {
     excerpt: "A 45-minute session on running consent-gated, Malayalam-first origination inside RBI calling windows, with a live Dhana walkthrough.",
     date: "2026-09-18",
     read: "Register",
-    image: "/assets/resources/res-library-ribbon.jpg",
+    image: "assets/resources/res-library-ribbon.jpg",
     body: `
       <p>Join the Dhana team for a practical walkthrough of voice-first origination for co-operative banks: the consent gate, twelve-month income framing, the credit-ready file, and where the human maker sits in the loop.</p>
       <p><strong>When:</strong> 18 September 2026, 4:00 PM IST · <strong>Where:</strong> Online.</p>
@@ -324,7 +324,7 @@ export const CONTENT = {
     excerpt: "A conversation on the RBI FREE-AI framework, HITL on credit decisions, and honest compliance claims, not overclaiming certification.",
     date: "2026-09-05",
     read: "Details",
-    image: "/assets/resources/res-framework-scales.jpg",
+    image: "assets/resources/res-framework-scales.jpg",
     body: `
       <p>Dhana joins a roundtable on responsible AI in lending: aligning with the RBI FREE-AI committee's direction, keeping humans in the loop on credit decisions, and talking about compliance without overclaiming.</p>
       <p>We say "designed to support" and "aligned with", not "certified for everything." This session is about what that discipline looks like in practice.</p>
@@ -337,7 +337,7 @@ export const CONTENT = {
     excerpt: "Pick one journey and one channel. We'll wire it to your stack in a sandbox and show you the metrics before you commit.",
     date: "2026-09-25",
     read: "Book",
-    image: "/assets/resources/res-blog-officers.jpg",
+    image: "assets/resources/res-blog-officers.jpg",
     body: `
       <p>Use Dhana for three months, look at the metrics, then decide. Demo day is a scoped, hands-on session: pick one journey (say, working-capital origination) and one channel (voice, web or WhatsApp), and we'll show it running end to end.</p>
       <p>Book a slot and tell us your stack (Finacle, LOS, CRM) and we'll scope the sandbox.</p>
@@ -352,7 +352,7 @@ export const CONTENT = {
     excerpt: "Board-governed AI, explainable outcomes, and clear consumer awareness when a borrower is talking to an AI relationship manager.",
     date: "2026-08-01",
     read: "Framework note",
-    image: "/assets/resources/res-free-ai.jpg",
+    image: "assets/resources/res-free-ai.jpg",
     authority: { name: "Reserve Bank of India", url: "https://www.rbi.org.in/", note: "Verify the latest FREE-AI releases on the official RBI site." },
     body: `
       <p>The RBI's FREE-AI (Framework for Responsible and Ethical Enablement of AI) direction sets the tone for how regulated entities should deploy AI in financial services: with board-level ownership, explainability, and honesty with the customer.</p>
@@ -369,7 +369,7 @@ export const CONTENT = {
     excerpt: "LSP/RE accountability, consent before outreach, and disciplined data practices. Dhana sits under the regulated entity, not a shadow-lender UX.",
     date: "2026-07-25",
     read: "Framework note",
-    image: "/assets/resources/res-lending-directions.jpg",
+    image: "assets/resources/res-lending-directions.jpg",
     authority: { name: "Reserve Bank of India", url: "https://www.rbi.org.in/", note: "Read the official Digital Lending Directions on rbi.org.in." },
     body: `
       <p>The RBI Digital Lending Directions put accountability squarely on the Regulated Entity and its Lending Service Providers: consent before outreach, transparent pricing, and an auditable trail. A lot of "instant loan" apps were built to route around exactly this. Dhana is built to sit inside it.</p>
@@ -390,7 +390,7 @@ export const CONTENT = {
     excerpt: "Purpose limitation, consent, and deletion rights in the session flow. Retention follows the institution's policy; Dhana doesn't invent a parallel data estate.",
     date: "2026-07-20",
     read: "Framework note",
-    image: "/assets/resources/res-dpdp-shield.jpg",
+    image: "assets/resources/res-dpdp-shield.jpg",
     authority: { name: "MeitY (Government of India)", url: "https://www.meity.gov.in/", note: "Government of India DPDP materials are published by MeitY." },
     body: `
       <p>The DPDP Act, 2023 gives Indian borrowers real rights over their personal data: consent, purpose limitation, and deletion. For a voice agent that hears a lot in a single call, those rights have to be built into the flow, not bolted on afterwards.</p>
@@ -407,7 +407,7 @@ export const CONTENT = {
     excerpt: "Customer data need not leave institution servers. On-prem, private VPC, or managed cloud; adapters stay inside your trust boundary.",
     date: "2026-07-15",
     read: "Deployment note",
-    image: "/assets/resources/res-vault-perimeter.jpg",
+    image: "assets/resources/res-vault-perimeter.jpg",
     authority: { name: "RBI (IT & cyber governance)", url: "https://www.rbi.org.in/", note: "Cross-check RBI's IT governance and outsourcing guidance at the official source." },
     body: `
       <p>The safest place for a borrower's conversation is inside the bank that's already trusted with their money. Dhana is built to deploy there: on-prem, in a private VPC, or in a managed cloud for pilots. Your choice.</p>
@@ -424,7 +424,7 @@ export const CONTENT = {
     excerpt: "Outbound voice and WhatsApp only after an explicit, logged consent basis, purpose-bound, revocable, and visible on the credit-ready file.",
     date: "2026-07-10",
     read: "Practice note",
-    image: "/assets/resources/res-selfhost.jpg",
+    image: "assets/resources/res-selfhost.jpg",
     authority: { name: "Reserve Bank of India", url: "https://www.rbi.org.in/", note: "Cross-check consent and LSP conduct duties at the official source." },
     body: `
       <p>Reaching out to a borrower is not a neutral act; it's regulated conduct. Dhana treats consent as a gate, not a footnote: no outbound voice or WhatsApp contact happens without an explicit, logged basis.</p>
@@ -441,7 +441,7 @@ export const CONTENT = {
     excerpt: "Dhana assists bankers and makers; it never approves, declines, or revises a decision. Approve/decline paths are locked and escalation keywords route to a human.",
     date: "2026-07-05",
     read: "Control note",
-    image: "/assets/resources/res-hitl-stamp.jpg",
+    image: "assets/resources/res-hitl-stamp.jpg",
     authority: { name: "Reserve Bank of India (FREE-AI)", url: "https://www.rbi.org.in/", note: "Human oversight expectations are set out in RBI's responsible-AI direction." },
     body: `
       <p>"Human in the loop" is only real if the human can actually change the outcome. In Dhana, the credit call is locked to a human maker: the agent cannot approve, decline, or revise a decision, and that lock cannot be turned off when you configure the agent.</p>

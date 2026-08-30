@@ -7,6 +7,9 @@ const root = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   root: ".",
   publicDir: "public",
+  // Relative base so the built site works at any location — a GitHub Pages
+  // sub-path (/Dhana_Landingpage/) now, or a custom-domain root later — with no rebuild.
+  base: "./",
   server: {
     port: 5173,
     host: true,

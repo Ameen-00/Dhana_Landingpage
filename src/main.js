@@ -2186,8 +2186,8 @@ let __demoAudio = null;
 function playDemoVoice(kind, lang) {
   const base = VOICE_BASES[kind];
   if (!base) return;
-  const enSrc = `/assets/audio/${base}.mp3`;
-  const langSrc = `/assets/audio/${base}-${(lang || "en").toLowerCase()}.mp3`;
+  const enSrc = `assets/audio/${base}.mp3`;
+  const langSrc = `assets/audio/${base}-${(lang || "en").toLowerCase()}.mp3`;
   try {
     if (__demoAudio) __demoAudio.pause();
     const a = new Audio(langSrc);
@@ -2215,7 +2215,7 @@ function stopDemoVoice() {
 }
 // Play one scripted line: /assets/audio/<channel>-<lang>-<key>.mp3 (real Sarvam voices).
 function playLineVoice(channel, lang, key) {
-  const src = `/assets/audio/${channel}-${(lang || "en").toLowerCase()}-${key}.mp3`;
+  const src = `assets/audio/${channel}-${(lang || "en").toLowerCase()}-${key}.mp3`;
   try {
     if (__demoAudio) __demoAudio.pause();
     const a = new Audio(src);
