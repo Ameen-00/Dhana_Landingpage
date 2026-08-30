@@ -1002,6 +1002,101 @@
         </div>
       </section>
 
+      <!-- FAQ -->
+      <section class="section faq-section" id="faq">
+        <div class="wrap">
+          <div class="faq-head reveal">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title section-title--wide">Questions banks ask us first.</h2>
+            <p class="section-lead">Straight answers on what Dhana is, how it stays compliant, and how a pilot actually works.</p>
+          </div>
+          <div class="faq-list reveal">
+            <details class="faq-item" open>
+              <summary>Is Dhana a lender?</summary>
+              <div class="faq-body">
+                No. Dhana is a relationship layer that runs inside your institution as your agent. It never approves,
+                declines, or prices credit — a human maker owns every credit decision. Dhana simply packages a
+                credit-ready file and hands it to the desk.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Does our customers' data leave our systems?</summary>
+              <div class="faq-body">
+                No, by design. Deploy Dhana inside your perimeter — on-prem, a private VPC, or a managed cloud.
+                Adapters to Finacle / CBS, LOS, CRM, bureau, DigiLocker and Account Aggregator stay inside your trust
+                boundary, and the voice stack runs on infrastructure in India.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Which languages does it speak?</summary>
+              <div class="faq-body">
+                Malayalam, Hindi, Tamil and English today, with eleven Indian languages supported and Arabic / Gulf
+                dialects next. Language is chosen per conversation, so the same agent, tuned once, meets each borrower
+                in their own tongue.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How does this line up with RBI and DPDP?</summary>
+              <div class="faq-body">
+                We say "aligned with" and "designed to support," not "certified for everything." Consent is captured
+                before any outreach, soft-bureau and Account Aggregator pulls are logged, human-in-the-loop is required
+                on credit-relevant decisions, and DPDP purpose-limitation and deletion are built into the flow.
+                <a href="resources.html#frameworks">Read the framework notes</a>.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Is there really a human in the loop?</summary>
+              <div class="faq-body">
+                Yes, and it can't be switched off. The credit call is locked to a human maker; the agent cannot
+                approve, decline, or revise it, and that lock isn't configurable. Complaint and regulator keywords
+                escalate to a person immediately.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What does it cost?</summary>
+              <div class="faq-body">
+                There's no public rate card. Run a scoped pilot for three months on one journey, look at the metrics,
+                and decide — you commit only after you've seen the outcome. Setup, platform, and usage are scoped to
+                your stack. <a href="#reach">Start a pilot</a>.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How fast can we go live, and does it replace our core?</summary>
+              <div class="faq-body">
+                A pilot starts on one journey and one channel — inbound or outbound voice, a website coach, or
+                WhatsApp. Your core (Finacle / CBS, LOS, CRM) stays unchanged, because Dhana joins the flow through
+                adapters. Each product after the first reuses the same layer and security review, so it's a sprint,
+                not a rebuild.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Is what I see here live, or a demo?</summary>
+              <div class="faq-body">
+                Dhana is live at a co-operative bank (our MRCB reference deploy). The theaters on this page are
+                illustrative, but the recordings under <a href="resources.html#videos">Resources → Videos</a> are real
+                product captures.
+              </div>
+            </details>
+          </div>
+        </div>
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Is Dhana a lender?", "acceptedAnswer": { "@type": "Answer", "text": "No. Dhana is a relationship layer that runs inside your institution as your agent. It never approves, declines, or prices credit; a human maker owns every credit decision. Dhana packages a credit-ready file and hands it to the desk." } },
+              { "@type": "Question", "name": "Does our customers' data leave our systems?", "acceptedAnswer": { "@type": "Answer", "text": "No, by design. Deploy Dhana inside your perimeter: on-prem, a private VPC, or a managed cloud. Adapters to Finacle/CBS, LOS, CRM, bureau, DigiLocker and Account Aggregator stay inside your trust boundary, and the voice stack runs on infrastructure in India." } },
+              { "@type": "Question", "name": "Which languages does it speak?", "acceptedAnswer": { "@type": "Answer", "text": "Malayalam, Hindi, Tamil and English today, with eleven Indian languages supported and Arabic and Gulf dialects next. Language is chosen per conversation." } },
+              { "@type": "Question", "name": "How does this line up with RBI and DPDP?", "acceptedAnswer": { "@type": "Answer", "text": "Aligned with and designed to support, not certified for everything. Consent before outreach, logged bureau and Account Aggregator pulls, human-in-the-loop on credit-relevant decisions, and DPDP purpose-limitation and deletion built into the flow." } },
+              { "@type": "Question", "name": "Is there really a human in the loop?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it can't be switched off. The credit call is locked to a human maker; the agent cannot approve, decline, or revise it, and that lock isn't configurable. Complaint and regulator keywords escalate to a person immediately." } },
+              { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "There is no public rate card. Run a scoped pilot for three months on one journey, look at the metrics, and decide; you commit only after you've seen the outcome. Setup, platform, and usage are scoped to your stack." } },
+              { "@type": "Question", "name": "How fast can we go live, and does it replace our core?", "acceptedAnswer": { "@type": "Answer", "text": "A pilot starts on one journey and one channel: inbound or outbound voice, a website coach, or WhatsApp. Your core stays unchanged because Dhana joins the flow through adapters. Each product after the first reuses the same layer and security review." } },
+              { "@type": "Question", "name": "Is what I see here live, or a demo?", "acceptedAnswer": { "@type": "Answer", "text": "Dhana is live at a co-operative bank (the MRCB reference deploy). The theaters on the site are illustrative, but the recordings under Resources are real product captures." } }
+            ]
+          }
+        </script>
+      </section>
+
       <!-- Reach out: one section, three tabs (waitlist opens by default) -->
       <section class="section reachout-band" id="reach">
         <div class="wrap">

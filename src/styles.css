@@ -3600,6 +3600,86 @@ button.web-lang-badge {
   color: var(--accent);
 }
 
+/* ——— FAQ ——— */
+.faq-head {
+  max-width: 640px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+.faq-head .section-title,
+.faq-head .section-lead {
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq-head .section-lead {
+  margin-bottom: 0;
+}
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-item {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-panel);
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+.faq-item[open] {
+  border-color: var(--ghost-border);
+}
+.faq-item summary {
+  padding: 20px 22px;
+  cursor: pointer;
+  font-weight: 650;
+  font-size: 16px;
+  color: var(--ivory);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: "+";
+  flex: none;
+  color: var(--accent);
+  font-size: 22px;
+  line-height: 1;
+}
+.faq-item[open] summary::after {
+  content: "−";
+}
+.faq-item summary:hover {
+  color: var(--accent);
+}
+.faq-body {
+  padding: 0 22px 20px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--mute);
+  max-width: 68ch;
+}
+.faq-body a {
+  color: var(--accent);
+}
+@media (max-width: 560px) {
+  .faq-item summary {
+    padding: 16px 18px;
+    font-size: 15px;
+  }
+  .faq-body {
+    padding: 0 18px 16px;
+  }
+}
+
 /* ——— Footer ——— */
 .footer {
   padding: 48px 0 32px;
