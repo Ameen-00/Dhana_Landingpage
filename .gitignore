@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+*.log
+.vite
+
+# large dev-only reference material & backups (not part of the site)
+_refs/
+**/*.backup.*
+.env
+.env.local

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhana — speak bar look (clone of Grok.com). Not the build.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: "Instrument Sans", system-ui, sans-serif;
+      background: #fafafa;
+      color: #111;
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+    .flag {
+      background: #111; color: #fff; text-align: center;
+      padding: .5rem 1rem; font-size: .78rem; font-weight: 600; letter-spacing: .03em;
+    }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 1.5rem; max-width: 1100px; margin: 0 auto; width: 100%;
+    }
+    header b { letter-spacing: -.02em; font-size: 1.05rem; }
+    header nav { display: flex; gap: 1.4rem; font-size: .9rem; color: #555; }
+    .ghost {
+      border: 1px solid #ddd; border-radius: 999px; padding: .45rem 1rem; font-size: .88rem;
+    }
+    main {
+      display: grid; place-items: center; padding: 0 1.2rem 4rem;
+    }
+    .stage { width: min(640px, 100%); text-align: center; }
+    .mark {
+      width: 42px; height: 42px; border-radius: 12px; background: #111; color: #fff;
+      display: grid; place-items: center; margin: 0 auto 1.1rem;
+      font-weight: 700; letter-spacing: -.04em;
+    }
+    h1 { font-size: 2.05rem; font-weight: 600; letter-spacing: -.04em; margin-bottom: 1.6rem; }
+    .bar {
+      display: flex; align-items: center; gap: .55rem;
+      background: #fff; border: 1px solid #e6e6e6;
+      border-radius: 999px; padding: .45rem .45rem .45rem 1.1rem;
+      box-shadow: 0 8px 30px -18px rgba(0,0,0,.25);
+    }
+    .bar input {
+      flex: 1; border: 0; outline: 0; background: 0;
+      font: 1.02rem/1.4 "Instrument Sans", system-ui, sans-serif;
+      color: #111;
+    }
+    .mic, .go {
+      width: 40px; height: 40px; border-radius: 50%; border: 0; cursor: pointer;
+    }
+    .mic { background: #f3f3f3; }
+    .go { background: #111; color: #fff; font-size: 1.1rem; }
+    .langs {
+      margin-top: 1.1rem; font-size: .92rem; color: #666;
+      display: flex; justify-content: center; gap: .9rem; flex-wrap: wrap;
+    }
+    .langs button {
+      background: 0; border: 0; font: inherit; color: inherit; cursor: pointer;
+      padding: .2rem .4rem; border-bottom: 1px solid transparent;
+    }
+    .langs button.on { color: #111; border-color: #111; font-weight: 600; }
+    .hints { margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; }
+    .hints button {
+      background: #fff; border: 1px solid #e8e8e8; border-radius: 999px;
+      padding: .45rem .85rem; font: .85rem/1.3 inherit; cursor: pointer; color: #333;
+    }
+    footer {
+      text-align: center; padding: 1.2rem; font-size: .78rem; color: #888;
+    }
+    @media (max-width: 700px) { header nav { display: none; } h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+  <div class="flag">LOOK MOCK — layout cloned from grok.com. Dhana copy. Replica has not started. Open this file.</div>
+  <header>
+    <b>Dhana</b>
+    <nav>
+      <a href="#">How it works</a>
+      <a href="#">Loans</a>
+      <a href="#">Lenders</a>
+    </nav>
+    <a class="ghost" href="https://kerala-bank-demo-700028221444.us-central1.run.app/login" target="_blank" rel="noopener">Talk to Dhana</a>
+  </header>
+  <main>
+    <div class="stage">
+      <div class="mark">D</div>
+      <h1>What do you need?</h1>
+      <form class="bar" action="https://kerala-bank-demo-700028221444.us-central1.run.app/login" method="get">
+        <input id="q" name="q" value="I need ₹5 lakh for a home renovation" />
+        <button class="mic" type="button" title="Voice">◎</button>
+        <button class="go" type="submit">↑</button>
+      </form>
+      <div class="langs">
+        <button class="on" type="button">English</button>
+        <button type="button">हिन्दी</button>
+        <button type="button">മലയാളം</button>
+        <button type="button">عربي</button>
+      </div>
+      <div class="hints">
+        <button type="button">Personal loan, ₹3 lakh</button>
+        <button type="button">मुझे बिजनेस लोन चाहिए</button>
+        <button type="button">Gold loan, this week</button>
+        <button type="button">Home loan in Dubai</button>
+      </div>
+    </div>
+  </main>
+  <footer>Primary clone source: grok.com · Craft: elevenlabs.io · Languages: wise.com · This is the look, not the production site.</footer>
+  <script>
+    const input = document.getElementById('q')
+    const lines = {
+      English: 'I need ₹5 lakh for a home renovation',
+      'हिन्दी': 'मुझे घर बनवाने के लिए ₹5 लाख का लोन चाहिए',
+      'മലയാളം': 'എനിക്ക് വീട് റിനൊവേഷന് ₹5 ലക്ഷം വേണം',
+      'عربي': 'أحتاج قرضًا بقيمة 5 لكح لتجديد المنزل'
+    }
+    document.querySelectorAll('.langs button').forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll('.langs button').forEach(b => b.classList.remove('on'))
+        btn.classList.add('on')
+        input.value = lines[btn.textContent] || input.value
+      }
+    })
+    document.querySelectorAll('.hints button').forEach(btn => {
+      btn.onclick = () => { input.value = btn.textContent }
+    })
+  </script>
+</body>
+</html>

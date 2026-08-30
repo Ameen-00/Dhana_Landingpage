@@ -1,0 +1,31 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Multi-page static site — do not SPA-fallback everything to index.html
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
+
+[[redirects]]
+  from = "/use-cases"
+  to = "/use-cases.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources"
+  to = "/resources.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200

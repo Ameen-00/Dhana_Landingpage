@@ -1,0 +1,10 @@
+import { chromium } from "playwright";
+const browser = await chromium.launch({ channel: "msedge", headless: true });
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, reducedMotion: "reduce" });
+await page.goto("http://localhost:5173/", { waitUntil: "networkidle" });
+await page.click('[data-lang="ar"]');
+await page.waitForTimeout(400);
+await page.screenshot({ path: "C:/Users/ameen/OneDrive/Desktop/dhana-site/_refs/verify-ar.png" });
+console.log("dir", await page.locator("html").getAttribute("dir"));
+console.log("h1", await page.locator("h1").innerText());
+await browser.close();

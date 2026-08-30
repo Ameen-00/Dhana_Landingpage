@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Use cases | Dhana</title>
+    <meta
+      name="description"
+      content="Dhana traction and scenarios: MRCB live reference, PaisaOnClick marketplace, Jeff App pipeline, Kerala Bank demo, Shreya, WhatsApp, integrity, insurance and wealth."
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="wordmark" href="/">dhana<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="/">Product</a></li>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/resources.html">Resources</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="https://calendly.com/ameen-r/aibanker-demo" data-book-pilot target="_blank" rel="noopener noreferrer">Book a pilot</a>
+          <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-drawer" hidden>
+      <a href="/">Product</a>
+      <a href="/pricing.html">Pricing</a>
+      <a href="/resources.html">Resources</a>
+      <a href="/contact.html">Contact</a>
+      <a class="btn btn-primary" href="https://calendly.com/ameen-r/aibanker-demo" data-book-pilot target="_blank" rel="noopener noreferrer">Book a pilot</a>
+    </div>
+
+    <main id="main" data-uc-page>
+      <section class="page-hero page-hero--air">
+        <div class="wrap">
+          <span class="section-label reveal">Use cases</span>
+          <h1 class="reveal">Traction, pipeline, and product scenarios.</h1>
+          <p class="reveal">
+            Honest status labels (Live, Pilot, Pipeline, Discussion) plus the product journeys we demo for banks,
+            NBFCs, and co-ops. Search and filter still work.
+          </p>
+        </div>
+      </section>
+
+      <!-- VOICE-FIRST BAND -->
+      <section class="vfb reveal">
+        <div class="wrap">
+          <div class="vfb-grid">
+            <div class="vfb-copy">
+              <span class="vfb-label">🎙 Voice-first · every scenario</span>
+              <h2>Every use case below starts the same way, someone speaks.</h2>
+              <p>
+                No forms to abandon. A borrower talks in their language; Dhana listens, verifies with consent, and
+                hands the officer a credit-ready file. Here's what that unlocks across products and channels.
+              </p>
+              <div class="vfb-cta">
+                <button type="button" class="btn btn-primary" data-vfb-play>▶ Hear a credit conversation</button>
+                <a class="btn btn-ghost" href="#film">See the product film</a>
+              </div>
+            </div>
+            <div class="vfb-visual">
+              <button type="button" class="vfb-orb vfb-play" data-vfb-play aria-label="Play a sample Dhana conversation">
+                <span class="vfb-play-icon">▶</span>
+              </button>
+              <div class="vfb-wave" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="vfb-langs" aria-hidden="true"><span>EN</span><span class="lang-hi">हिं</span><span class="lang-ml">ML</span><span class="lang-ta">த</span></div>
+              <audio data-vfb-audio preload="none"><source src="/assets/audio/dhana-voice-sample.mp3" type="audio/mpeg" /></audio>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section uc-film reveal" id="film">
+        <div class="wrap">
+          <div class="uc-film-grid">
+            <div class="uc-film-copy">
+              <span class="section-label">Film</span>
+              <h2 class="section-title">Dhana in motion</h2>
+              <p class="section-lead">
+                Product film for the relationship layer. Voice, webflow, and the purple AI presence customers meet.
+                Use this as the visual reference for every use case below.
+              </p>
+            </div>
+            <div class="uc-film-player">
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                poster="/assets/videos/dhana-film2-poster.jpg?v=3"
+                aria-label="Dhana product film"
+              >
+                <source src="/assets/videos/dhana-film2.mp4?v=3" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 8px">
+        <div class="wrap">
+          <div class="uc-toolbar reveal">
+            <input
+              class="uc-search"
+              type="search"
+              placeholder="Search use cases…"
+              aria-label="Search use cases"
+              data-uc-search
+            />
+            <div class="uc-filters" role="group" aria-label="Filter use cases">
+              <button type="button" class="uc-filter" data-uc-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="uc-filter" data-uc-filter="traction" aria-pressed="false">Traction</button>
+              <button type="button" class="uc-filter" data-uc-filter="lending" aria-pressed="false">Lending</button>
+              <button type="button" class="uc-filter" data-uc-filter="coop" aria-pressed="false">Co-op</button>
+              <button type="button" class="uc-filter" data-uc-filter="whatsapp" aria-pressed="false">WhatsApp</button>
+              <button type="button" class="uc-filter" data-uc-filter="collections" aria-pressed="false">Collections</button>
+              <button type="button" class="uc-filter" data-uc-filter="integrity" aria-pressed="false">Integrity</button>
+              <button type="button" class="uc-filter" data-uc-filter="insurance" aria-pressed="false">Insurance</button>
+              <button type="button" class="uc-filter" data-uc-filter="wealth" aria-pressed="false">Wealth</button>
+              <button type="button" class="uc-filter" data-uc-filter="msme" aria-pressed="false">MSME</button>
+              <button type="button" class="uc-filter" data-uc-filter="kyc" aria-pressed="false">KYC</button>
+              <button type="button" class="uc-filter" data-uc-filter="voice" aria-pressed="false">Voice</button>
+            </div>
+          </div>
+
+          <h2 class="uc-group-label reveal">Traction &amp; pipeline</h2>
+          <div class="uc-grid uc-grid--traction reveal-stagger">
+            <article class="uc-card uc-card--traction reveal" data-uc-card data-tags="traction coop lending live" style="--i:0">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-mrcb.jpg" alt="" loading="lazy" />
+                <span class="uc-logo uc-logo--overlay" aria-hidden="true">MR</span>
+                <span class="status-pill status-pill--live status-pill--onmedia">Live · reference deploy</span>
+              </div>
+              <div class="uc-card-body">
+                <h3>MRCB co-operative</h3>
+                <div class="uc-metric">1,000<span>+</span></div>
+                <p class="uc-metric-label">customers / calls onboarded via AiBanker · Dhana relationship layer</p>
+                <p>
+                  Aligns with seed-deck pilot traction at MRCB. Evening-window co-op origination with consent, Malayalam
+                  voice, and officer callbacks. Reference deploy, not a vanity logo wall.
+                </p>
+                <div class="uc-tags">
+                  <span class="uc-tag">Co-op</span>
+                  <span class="uc-tag">Lending</span>
+                  <span class="uc-tag">Live</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="uc-card uc-card--traction reveal" data-uc-card data-tags="traction lending live" style="--i:1">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-paisaonclick.jpg" alt="" loading="lazy" />
+                <span class="uc-logo uc-logo--overlay uc-logo--accent" aria-hidden="true">PC</span>
+                <span class="status-pill status-pill--live status-pill--onmedia">Live marketplace</span>
+              </div>
+              <div class="uc-card-body">
+                <h3>PaisaOnClick</h3>
+                <div class="uc-metric">2,000<span>+</span></div>
+                <p class="uc-metric-label">loans facilitated · conversation-led origination</p>
+                <p>
+                  Marketplace figure from live facilitation. Borrowers start in conversation, not a cold form dump.
+                  Credit-ready context shortens desk time while consent stays on the path.
+                </p>
+                <div class="uc-tags">
+                  <span class="uc-tag">Marketplace</span>
+                  <span class="uc-tag">Lending</span>
+                  <span class="uc-tag">Live</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="uc-card uc-card--traction reveal" data-uc-card data-tags="traction lending pipeline" style="--i:2">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-jeff.jpg" alt="" loading="lazy" />
+                <span class="uc-logo uc-logo--overlay" aria-hidden="true">JF</span>
+                <span class="status-pill status-pill--pipeline status-pill--onmedia">In discussion · pipeline</span>
+              </div>
+              <div class="uc-card-body">
+                <h3>Jeff App</h3>
+                <div class="uc-metric">500K<span>+</span></div>
+                <p class="uc-metric-label">calls / month scoped · pipeline discussion</p>
+                <p>
+                  High-volume voice scope under discussion. Not a live customer claim. Pipeline means commercial and
+                  technical conversations are active; deploy status TBD.
+                </p>
+                <div class="uc-tags">
+                  <span class="uc-tag">Pipeline</span>
+                  <span class="uc-tag">Voice</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="uc-card uc-card--traction reveal" data-uc-card data-tags="traction coop lending discussion" style="--i:3">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-kerala-bank.jpg" alt="" loading="lazy" />
+                <span class="uc-logo uc-logo--overlay" aria-hidden="true">KB</span>
+                <span class="status-pill status-pill--discussion status-pill--onmedia">Demo delivered · discussion</span>
+              </div>
+              <div class="uc-card-body">
+                <h3>Kerala State Co-operative Bank</h3>
+                <div class="uc-metric uc-metric--sm">Demo</div>
+                <p class="uc-metric-label">AiBanker demo delivered · technical evaluation ongoing</p>
+                <p>
+                  Kerala Bank. Demo completed; discussion and technical evaluation in progress. Not marked live until a
+                  production or pilot reference is confirmed.
+                </p>
+                <div class="uc-tags">
+                  <span class="uc-tag">Co-op</span>
+                  <span class="uc-tag">Discussion</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <h2 class="uc-group-label reveal" style="margin-top: 56px">Product scenarios</h2>
+          <div class="uc-grid reveal-stagger">
+            <article class="uc-card reveal" data-uc-card data-tags="lending" style="--i:0">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-shreya.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Lending</span><span class="uc-tag">Flagship</span></div>
+                <h3>Shreya: exception lending</h3>
+                <p>
+                  Fashion designer with real UPI velocity, auto-filtered as “unstable salary.” Dhana frames 12-month income,
+                  gathers AA/UPI with consent, and hands the desk an exception file. Not a silent reject.
+                </p>
+                <div class="cta-row">
+                  <a class="btn btn-primary btn-sm" href="/#shreya">See the story</a>
+                  <a class="btn btn-ghost btn-sm" href="/#theater">Play the call demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="coop lending" style="--i:1">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-malayalam-evening.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Co-op</span><span class="uc-tag">Lending</span></div>
+                <h3>Evening applicant · Malayalam</h3>
+                <p>
+                  Post-6pm gold or personal loan enquiry when the branch is closed. Dhana answers in Malayalam, respects
+                  calling windows, logs consent, and books an officer callback for the next working window.
+                </p>
+                <ul class="check-list">
+                  <li>Regional voice first</li>
+                  <li>Calling-window respect</li>
+                  <li>Callback + audit trail</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="whatsapp lending" style="--i:2">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-whatsapp-retarget.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">WhatsApp</span><span class="uc-tag">Lending</span></div>
+                <h3>Retarget after rejection</h3>
+                <p>
+                  Prior application closed by a salary gate. Thirty-two days later UPI looks stronger. Dhana reopens the
+                  thread, explains the gap, offers recheck or cross-sell, and can hand off to a human desk.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/#theater">Open WhatsApp theater</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="integrity lending" style="--i:3">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-deepfake.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Integrity</span></div>
+                <h3>Spoof / deepfake flag</h3>
+                <p>
+                  Voice integrity layer on live audio. When signals look off, the session escalates to HITL with a clear
+                  badge. Never a silent auto-approve on credit-relevant outcomes.
+                </p>
+                <ul class="check-list">
+                  <li>Pass / review badge in-call</li>
+                  <li>Escalation keywords + human lock</li>
+                  <li>Logged on the credit-ready file</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="insurance" style="--i:4">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-insurance.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Insurance</span></div>
+                <h3>Insurance explain &amp; cross-sell</h3>
+                <p>
+                  Deploy an insurance nature, tuned to your institution. Product explain, rider clarity, and cross-sell
+                  after a lending conversation, with compliance review before go-live.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/#self-host-home">See the roadmap</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="wealth" style="--i:5">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-wealth.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Wealth</span></div>
+                <h3>Wealth / SIP coaching</h3>
+                <p>
+                  Soft coaching on deposits and SIPs when a loan path is paused. Never a hard push, always with an
+                  officer path and clear disclosure that the agent is AI-assisted.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/#self-host-home">See the roadmap</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="collections" style="--i:6">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-ptp.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Collections</span></div>
+                <h3>PTP with empathy</h3>
+                <p>
+                  Promise-to-pay conversations that respect calling windows, log PTP amounts and dates, and escalate
+                  complaints. Without sounding like a robocall.
+                </p>
+                <ul class="check-list">
+                  <li>Window-aware outreach</li>
+                  <li>PTP logged to CRM</li>
+                  <li>Complaint → human</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="lending" style="--i:7">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-webflow-ml.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Lending</span><span class="uc-tag">Website</span></div>
+                <h3>Guided web apply · Malayalam</h3>
+                <p>
+                  Browser coach fills what conversation already knows, frames amount and purpose, and offers a Malayalam
+                  webflow recording for design partners to review voice + UI together.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/#theater">See website theater</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="coop whatsapp" style="--i:8">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-docs-chase.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Co-op</span><span class="uc-tag">WhatsApp</span></div>
+                <h3>Branch-closed document chase</h3>
+                <p>
+                  Co-op applicants often finish forms after hours. Dhana continues on WhatsApp for statement upload and
+                  OCR, then queues the officer for the next morning window.
+                </p>
+                <ul class="check-list">
+                  <li>After-hours continuity</li>
+                  <li>In-thread docs</li>
+                  <li>Morning desk queue</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="integrity collections" style="--i:9">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-escalate.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Integrity</span><span class="uc-tag">Collections</span></div>
+                <h3>Complaint keyword escalate</h3>
+                <p>
+                  Locked guardrails escalate on “manager”, “complaint”, or “RBI”. Credit and grievance outcomes never
+                  stay with the agent alone.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/resources.html#hitl">HITL notes</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="coop lending" style="--i:10">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-gold-loan.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Co-op</span><span class="uc-tag">Lending</span></div>
+                <h3>Gold loan · evening window</h3>
+                <p>
+                  After-hours gold loan enquiry when the vault desk is closed. Dhana qualifies amount and purpose in the
+                  customer’s language, logs consent, and books the next working-window appraisal slot.
+                </p>
+                <ul class="check-list">
+                  <li>Window-aware booking</li>
+                  <li>Vernacular first contact</li>
+                  <li>Officer queue for appraisal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="lending" style="--i:11">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-msme-wc.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Lending</span><span class="uc-tag">MSME</span></div>
+                <h3>MSME working capital</h3>
+                <p>
+                  Shop and workshop owners with seasonal cash cycles. Dhana frames turnover from consented UPI / AA,
+                  builds the working-capital ask, and hands makers a file that is ready to review. Not auto-approved.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/#credit-file">See credit-ready CRM</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="lending integrity" style="--i:12">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-digilocker.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Lending</span><span class="uc-tag">KYC</span></div>
+                <h3>DigiLocker document assist</h3>
+                <p>
+                  Pull Aadhaar / PAN packs only after an explicit gate. OCR states land on the credit-ready file so
+                  officers are not chasing PDFs across WhatsApp threads.
+                </p>
+                <ul class="check-list">
+                  <li>Consent before fetch</li>
+                  <li>OCR status on file</li>
+                  <li>Finacle / LOS untouched</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="lending" style="--i:13">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-branch-book.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Lending</span><span class="uc-tag">Branch</span></div>
+                <h3>Branch appointment booking</h3>
+                <p>
+                  When a case needs human eyes, Dhana books a branch or desk slot inside calling windows and sends a
+                  confirmed reminder. Makers stay in control of the visit.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/contact.html">Book a pilot</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="collections" style="--i:14">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-emi-soft.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Collections</span></div>
+                <h3>Soft EMI reminder</h3>
+                <p>
+                  Pre-due and early-bucket reminders with empathy, language choice, and a clear path to speak to an
+                  officer. Complaint keywords escalate. No robocall tone.
+                </p>
+                <ul class="check-list">
+                  <li>Pre-due nudges</li>
+                  <li>Language preference</li>
+                  <li>HITL on grievance</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="lending" style="--i:15">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-aa-income.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Lending</span><span class="uc-tag">AA</span></div>
+                <h3>Account Aggregator income frame</h3>
+                <p>
+                  When salary slips understate real cashflow, Dhana walks the borrower through AA consent and frames a
+                  12-month income narrative the desk can actually use.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/#shreya">See Shreya story</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="lending" style="--i:16">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-multilang.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Lending</span><span class="uc-tag">Voice</span></div>
+                <h3>Mid-call language switch</h3>
+                <p>
+                  Borrower starts in English, switches to Malayalam or Hindi mid-conversation. Dhana follows without
+                  restarting the journey, and the transcript stays on the file for the maker.
+                </p>
+                <a class="btn btn-ghost btn-sm" href="/#theater">Try language chips</a>
+              </div>
+            </article>
+
+            <article class="uc-card reveal" data-uc-card data-tags="lending whatsapp" style="--i:17">
+              <div class="uc-card-media">
+                <img src="/assets/usecases/uc-topup.jpg" alt="" loading="lazy" />
+                <span class="status-pill status-pill--scenario status-pill--onmedia">Scenario</span>
+              </div>
+              <div class="uc-card-body">
+                <div class="uc-tags"><span class="uc-tag">Lending</span><span class="uc-tag">WhatsApp</span></div>
+                <h3>Loan top-up retarget</h3>
+                <p>
+                  Existing borrower with clean repayment. Dhana opens a top-up conversation on WhatsApp with disclosure,
+                  soft bureau only after consent, and a maker review before anything is pushed to LOS.
+                </p>
+                <ul class="check-list">
+                  <li>Existing-customer journey</li>
+                  <li>Consent before bureau</li>
+                  <li>Maker review lock</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <p class="uc-empty" data-uc-empty>No use cases match that filter. Try All or clear search.</p>
+        </div>
+      </section>
+
+      <section class="pilot-band">
+        <div class="wrap">
+          <h2 class="reveal">Pick one journey. One channel. Pilot it.</h2>
+          <p class="reveal">We’re inviting design partners. Banks, NBFCs, and co-ops. Not collecting vanity logos.</p>
+          <div class="cta-row reveal" style="justify-content: center">
+            <a class="btn btn-primary" href="https://calendly.com/ameen-r/aibanker-demo" data-book-pilot target="_blank" rel="noopener noreferrer">Book a pilot</a>
+            <a class="btn btn-ghost" href="/contact.html">Contact / waitlist</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <a class="wordmark" href="/">dhana<span>.</span></a>
+          <p>The relationship layer for financial institutions.</p>
+          <p class="footer-address">
+            Altiora Capital Solution Private Limited<br />
+            The Office, 4th Floor, Jos Annex, Jos Junction,<br />
+            MG Road, Ernakulam South, Kerala 682016
+          </p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="mailto:support@altioracapitalsolution.com">support@altioracapitalsolution.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap footer-legal">
+        <span class="footer-address">© Altiora Capital Solution Private Limited · PaisaOnClick · Ernakulam</span>
+        <span>Dhana · Altiora / AiBanker in legal contexts only.</span>
+      </div>
+    </footer>
+
+    <div class="toast" data-toast role="status"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
