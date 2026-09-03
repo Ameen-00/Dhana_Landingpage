@@ -1149,7 +1149,7 @@ button {
 /* ——— Incoming-call (ringing): iOS layout matching the demo mockup ——— */
 .phone-status-icons { display: inline-flex; align-items: center; gap: 6px; }
 .phone-status-icons svg { height: 11px; width: auto; display: block; }
-.phone-ringing { padding: 0 0 6px; }
+.phone-ringing { padding: 0 0 20px; align-items: stretch; }
 .ring-top { text-align: center; margin-top: 30px; padding: 0 20px; flex-shrink: 0; }
 .ring-label { font-family: -apple-system, "SF Pro Text", var(--font-ui); font-size: 13px; color: #67748c; margin: 0 0 12px; }
 .ring-name { font-family: -apple-system, "SF Pro Display", var(--font-ui); font-size: 44px; font-weight: 500; letter-spacing: -0.5px; color: #0a1220; margin: 0; line-height: 1.04; }
