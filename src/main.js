@@ -111,7 +111,7 @@ const CALL_SCRIPTS = {
     {
       role: "agent",
       meta: "Dhana",
-      text: "Good evening. I'm Dhana, calling from your bank about the working-capital enquiry. Is this a good time?",
+      text: "Good evening. I'm Dhana, calling from your bank about your working-capital enquiry. Is this a good time?",
       status: "Speaking",
       outcomes: [
         ["status", "Speaking", ""],
@@ -123,11 +123,11 @@ const CALL_SCRIPTS = {
     {
       role: "user",
       meta: "Borrower",
-      text: "हाँ। मेरी एक बुटीक है। त्योहारों के महीनों में सेल अच्छी होती है, बाकी महीने शांत। फॉर्म ने अस्थिर सैलरी बता दिया।",
+      text: "Yes. I run a boutique. Sales are strong in the festival months and quieter the rest of the year, so the form flagged my salary as unstable.",
       status: "Listening",
       outcomes: [
         ["status", "Listening", ""],
-        ["language", "Detected · Hindi", "ok"],
+        ["language", "EN", ""],
         ["intent", "WC · seasonality", ""],
         ["integrity", "Pass", "ok"],
       ],
@@ -135,9 +135,9 @@ const CALL_SCRIPTS = {
     {
       role: "agent",
       meta: "Dhana",
-      text: "ठीक है, मैं हिंदी में बात करती हूँ। आय को सिर्फ़ पिछले महीने से नहीं, बल्कि 12 महीने के औसत से देखेंगे। क्या मैं आपकी सहमति से एक सॉफ्ट ब्यूरो जाँच करूँ?",
+      text: "I understand. Instead of just last month, we'll look at income as a twelve-month average. With your consent, may I run a soft bureau check? It won't affect your score.",
       status: "Speaking",
-      chip: "हाँ, जाँच कर सकते हैं",
+      chip: "Yes, you can check",
       outcomes: [
         ["status", "Consent gate", "warn"],
         ["income_frame", "12-mo avg", ""],
@@ -148,7 +148,7 @@ const CALL_SCRIPTS = {
     {
       role: "user",
       meta: "Borrower",
-      text: "हाँ, जाँच कर सकते हैं। मेरी दुकान का UPI सैलरी फील्ड से ज़्यादा साफ़ है।",
+      text: "Yes, you can check. My shop's UPI is much cleaner than the salary field.",
       status: "Listening",
       outcomes: [
         ["status", "Gathering", ""],
@@ -160,7 +160,7 @@ const CALL_SCRIPTS = {
     {
       role: "agent",
       meta: "Dhana",
-      text: "मैंने आपके क्रेडिट डेस्क के लिए एक अपवाद फाइल जोड़ दी है। दस्तावेज़ों के लिए WhatsApp आएगा। आपके समय के लिए धन्यवाद।",
+      text: "I've added an exception file for your credit desk. You'll get a WhatsApp for the documents. Thank you for your time.",
       status: "Complete",
       outcomes: [
         ["status", "Qualified", "ok"],
@@ -469,8 +469,14 @@ function initCallDemo(theater) {
         chips.hidden = true;
         advance();
       };
-      if (lineAudio) lineAudio.addEventListener("ended", () => { talkTimer = setTimeout(auto, 1400); }, { once: true });
-      talkTimer = setTimeout(auto, 8000);
+      if (lineAudio) {
+        // Let Dhana finish the question, then leave a beat to tap the reply before auto-advancing.
+        lineAudio.addEventListener("ended", () => { talkTimer = setTimeout(auto, 2200); }, { once: true });
+        lineAudio.addEventListener("error", () => { talkTimer = setTimeout(auto, 8000); }, { once: true });
+        talkTimer = setTimeout(auto, 24000); // safety cap only; real advance is on 'ended'
+      } else {
+        talkTimer = setTimeout(auto, 8000);
+      }
       return;
     }
 
@@ -486,7 +492,8 @@ function initCallDemo(theater) {
         advance();
       };
       lineAudio.addEventListener("ended", () => { talkTimer = setTimeout(go, 450); }, { once: true });
-      talkTimer = setTimeout(go, 11000); // fallback if the clip never loads
+      lineAudio.addEventListener("error", () => { talkTimer = setTimeout(go, step.role === "agent" ? 2200 : 1800); }, { once: true });
+      talkTimer = setTimeout(go, 24000); // safety cap only; real advance is on 'ended'
     } else {
       talkTimer = setTimeout(advance, step.role === "agent" ? 2200 : 1800);
     }
