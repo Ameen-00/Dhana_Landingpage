@@ -1145,6 +1145,28 @@ button {
   border: none;
   font-size: 22px;
 }
+
+/* ——— Incoming-call (ringing): iOS layout matching the demo mockup ——— */
+.phone-status-icons { display: inline-flex; align-items: center; gap: 6px; }
+.phone-status-icons svg { height: 11px; width: auto; display: block; }
+.phone-ringing { padding: 0 0 6px; }
+.ring-top { text-align: center; margin-top: 30px; padding: 0 20px; flex-shrink: 0; }
+.ring-label { font-family: -apple-system, "SF Pro Text", var(--font-ui); font-size: 13px; color: #67748c; margin: 0 0 12px; }
+.ring-name { font-family: -apple-system, "SF Pro Display", var(--font-ui); font-size: 44px; font-weight: 500; letter-spacing: -0.5px; color: #0a1220; margin: 0; line-height: 1.04; }
+.ring-spacer { flex: 1; }
+.ring-mini { display: flex; justify-content: space-between; padding: 0 42px 30px; flex-shrink: 0; }
+.rmini { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 11px; color: #47566d; }
+.rmini .ic { width: 44px; height: 44px; border-radius: 50%; background: rgba(11, 18, 32, 0.06); border: 1px solid rgba(11, 18, 32, 0.08); display: flex; align-items: center; justify-content: center; }
+.rmini .ic svg { width: 20px; height: 20px; fill: #2a3750; }
+.ring-big { display: flex; justify-content: space-between; padding: 0 32px; flex-shrink: 0; }
+.rbig { display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 13px; color: #47566d; background: none; border: none; padding: 0; cursor: pointer; font-family: inherit; }
+.rbig .ic { width: 68px; height: 68px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.rbig .ic svg { width: 32px; height: 32px; fill: #fff; }
+.rbig.decline .ic { background: var(--decline); box-shadow: 0 10px 24px rgba(255, 69, 58, 0.4); }
+.rbig.decline .ic svg { transform: rotate(135deg); }
+.rbig.accept .ic { background: var(--answer); box-shadow: 0 10px 24px rgba(52, 199, 89, 0.4); animation: ring-jiggle 1.4s ease-in-out infinite; }
+@keyframes ring-jiggle { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@media (prefers-reduced-motion: reduce) { .rbig.accept .ic { animation: none; } }
 .phone-action-btn.answer {
   background: var(--answer);
   color: #04120a;

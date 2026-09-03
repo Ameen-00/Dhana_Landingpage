@@ -134,7 +134,7 @@
                     <div class="phone-frame" data-phone data-state="idle">
                       <div class="phone-notch" aria-hidden="true"></div>
                       <div class="phone-screen">
-                        <div class="phone-status-bar"><span>9:41</span><span>●●●</span></div>
+                        <div class="phone-status-bar"><span>9:41</span><span class="phone-status-icons"><svg viewBox="0 0 18 12" fill="#0b1524"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="4.5" y="5" width="3" height="7" rx="1"/><rect x="9" y="2.5" width="3" height="9.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 17 12" fill="#0b1524"><path d="M8.5 2.5c2.4 0 4.6.9 6.3 2.4l1.2-1.4C14 1.6 11.4.5 8.5.5S3 1.6.5 3.5l1.2 1.4C3.4 3.4 6.1 2.5 8.5 2.5z"/><circle cx="8.5" cy="10" r="1.8"/></svg><svg viewBox="0 0 26 13" fill="none"><rect x="0.5" y="1" width="21" height="11" rx="3" stroke="#0b1524" opacity=".5"/><rect x="2" y="2.5" width="17" height="8" rx="1.6" fill="#0b1524"/><rect x="23" y="4" width="2" height="5" rx="1" fill="#0b1524" opacity=".5"/></svg></span></div>
 
                         <div class="phone-idle">
                           <div class="phone-avatar" role="img" aria-label="Dhana">
@@ -149,22 +149,22 @@
                         </div>
 
                         <div class="phone-ringing">
-                          <div class="phone-ring-ripples" aria-hidden="true"></div>
-                          <div class="phone-avatar" role="img" aria-label="Dhana">
-                            <div class="voice-orb-3d" data-voice-orb-3d data-orb-state="listening" data-orb-detail="4"></div>
-                            <video class="phone-medallion" autoplay muted loop playsinline aria-hidden="true">
-                              <source src="mal-medallion-phone.webm" type="video/webm" />
-                            </video>
+                          <div class="ring-top">
+                            <p class="ring-label">mobile</p>
+                            <p class="ring-name">Dhana</p>
                           </div>
-                          <p class="phone-caller">Dhana · Your Bank</p>
-                          <p class="phone-sub">Incoming call · working capital</p>
-                          <div class="phone-actions">
-                            <button type="button" class="phone-action" data-decline>
-                              <span class="phone-action-btn decline">✕</span>
+                          <div class="ring-spacer"></div>
+                          <div class="ring-mini" aria-hidden="true">
+                            <span class="rmini"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 22a2.2 2.2 0 0 0 2.2-2.2H9.8A2.2 2.2 0 0 0 12 22zm6.3-6V11a6.3 6.3 0 0 0-4.7-6.1 1.6 1.6 0 0 0-3.2 0A6.3 6.3 0 0 0 5.7 11v5l-1.6 1.6a.8.8 0 0 0 .6 1.4h14.6a.8.8 0 0 0 .6-1.4L18.3 16z"/></svg></span>Remind Me</span>
+                            <span class="rmini"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h4v4l5-4h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg></span>Message</span>
+                          </div>
+                          <div class="ring-big">
+                            <button type="button" class="rbig decline" data-decline aria-label="Decline">
+                              <span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.4a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.1 2.2z"/></svg></span>
                               Decline
                             </button>
-                            <button type="button" class="phone-action" data-answer>
-                              <span class="phone-action-btn answer">☎</span>
+                            <button type="button" class="rbig accept" data-answer aria-label="Answer">
+                              <span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.4a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.1 2.2z"/></svg></span>
                               Answer
                             </button>
                           </div>
