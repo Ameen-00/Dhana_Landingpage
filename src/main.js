@@ -163,7 +163,7 @@ const CALL_SCRIPTS = {
       text: "I've added an exception file for your credit desk. You'll get a WhatsApp for the documents. Thank you for your time.",
       status: "Complete",
       outcomes: [
-        ["status", "Qualified", "ok"],
+        ["status", "Lead captured", "ok"],
         ["lead", "Handoff ready", "ok"],
         ["consent", "Logged", "ok"],
         ["file", "Exception ready", "ok"],
@@ -226,7 +226,7 @@ const CALL_SCRIPTS = {
       text: "क्रेडिट डेस्क के लिए अपवाद फाइल तैयार है। दस्तावेज़ WhatsApp पर आएंगे। धन्यवाद।",
       status: "Complete",
       outcomes: [
-        ["status", "Qualified", "ok"],
+        ["status", "Lead captured", "ok"],
         ["lead", "Handoff ready", "ok"],
         ["consent", "Logged", "ok"],
         ["file", "Exception ready", "ok"],
@@ -289,7 +289,7 @@ const CALL_SCRIPTS = {
       text: "ക്രെഡിറ്റ് ഡെസ്ക്കിന് എക്സപ്ഷൻ ഫയൽ തയ്യാർ. ഡോക്യുമെന്റുകൾ WhatsApp-ൽ വരും. നന്ദി.",
       status: "Complete",
       outcomes: [
-        ["status", "Qualified", "ok"],
+        ["status", "Lead captured", "ok"],
         ["lead", "Handoff ready", "ok"],
         ["consent", "Logged", "ok"],
         ["file", "Exception ready", "ok"],
@@ -352,7 +352,7 @@ const CALL_SCRIPTS = {
       text: "கிரெடிட் டெஸ்க்குக்கு exception file தயார். ஆவணங்கள் WhatsApp-ல் வரும். நன்றி.",
       status: "Complete",
       outcomes: [
-        ["status", "Qualified", "ok"],
+        ["status", "Lead captured", "ok"],
         ["lead", "Handoff ready", "ok"],
         ["consent", "Logged", "ok"],
         ["file", "Exception ready", "ok"],
@@ -530,10 +530,10 @@ function initCallDemo(theater) {
     stopDemoVoice();
     setState("ended");
     if (chips) chips.hidden = true;
-    setOutcomes("Qualified", "verify", [
-      ["status", "Lead qualified", "ok"],
+    setOutcomes("Enquiry captured", "verify", [
+      ["status", "Lead captured", "ok"],
       ["consent", "Logged", "ok"],
-      ["file", "Ready to open", "ok"],
+      ["file", "Exception file ready", "ok"],
       ["integrity", "Pass", "ok"],
     ]);
     setOps({ session: "call-ended", channel: "Call", file: "ready", hitl: "review", los: "not synced" });
